@@ -1,0 +1,6 @@
+framework module Pods_Doorman_Tests {
+  umbrella header "Pods-Doorman_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

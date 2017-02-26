@@ -1,0 +1,6 @@
+framework module Doorman {
+  umbrella header "Doorman-umbrella.h"
+
+  export *
+  module * { export * }
+}

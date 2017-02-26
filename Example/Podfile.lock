@@ -1,0 +1,16 @@
+PODS:
+  - Doorman (0.1.0)
+
+DEPENDENCIES:
+  - Doorman (from `../`)
+
+EXTERNAL SOURCES:
+  Doorman:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Doorman: 3a87df53774f73f17878c4e47e8caf8f60832c1d
+
+PODFILE CHECKSUM: 8075680705ed83f0164a65881d6bca7e2795ff58
+
+COCOAPODS: 1.2.0

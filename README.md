@@ -1,10 +1,5 @@
 # Doorman
 
-[![CI Status](http://img.shields.io/travis/ben.bahrenburg@gmail.com/Doorman.svg?style=flat)](https://travis-ci.org/ben.bahrenburg@gmail.com/Doorman)
-[![Version](https://img.shields.io/cocoapods/v/Doorman.svg?style=flat)](http://cocoapods.org/pods/Doorman)
-[![License](https://img.shields.io/cocoapods/l/Doorman.svg?style=flat)](http://cocoapods.org/pods/Doorman)
-[![Platform](https://img.shields.io/cocoapods/p/Doorman.svg?style=flat)](http://cocoapods.org/pods/Doorman)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -22,7 +17,7 @@ pod "Doorman"
 
 ## Author
 
-ben.bahrenburg@gmail.com, ben.bahrenburg@gmail.com
+Ben Bahrenburg, @bencoding
 
 ## License
 
