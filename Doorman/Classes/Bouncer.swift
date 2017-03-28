@@ -25,7 +25,7 @@ public class Bouncer {
         queue = DispatchQueue(label: queueLabel, attributes: [.concurrent])
     }
     
-    @discardableResult public func inspect(jobLabel: String, threshold: TimeInterval, closure: @escaping (Bool) -> Void) {
+    public func inspect(jobLabel: String, threshold: TimeInterval, closure: @escaping (Bool) -> Void) {
         guard queue != nil else { return }
         
         let should = queue!.sync { () -> Bool in
@@ -42,7 +42,7 @@ public class Bouncer {
         }
     }
     
-    @discardableResult public func debounce(jobLabel: String, threshold: TimeInterval, closure: @escaping () -> Void) {
+    public func debounce(jobLabel: String, threshold: TimeInterval, closure: @escaping () -> Void) {
         guard queue != nil else { return }
         inspect(jobLabel: jobLabel, threshold: threshold, closure: {[weak self] (should: Bool) in
             if should {

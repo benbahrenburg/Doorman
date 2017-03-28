@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Doorman'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Ridiculously simple, sampling and control flow for Swift'
   s.description      = <<-DESC
   Ridiculously simple, sampling and control flow for Swift.
