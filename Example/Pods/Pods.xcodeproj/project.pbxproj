@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C98F93F7C9EE75472A5DFB35460AEC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		119DD8EE7680B6C78C1543EC1A24ED1E /* Pods-Doorman_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ABFF03CBEC318ED0FE405F6E0A748CD /* Pods-Doorman_Tests-dummy.m */; };
-		11C720D6AA5ED93749DA7883B27FE6A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		3E4610911E637A100037692B /* Bouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4610901E637A100037692B /* Bouncer.swift */; };
-		89A0FE3C76857CEC3DB0542B00A11FFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		28A85A3C9D7019CDD79C4E3F2FAF50DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2D905AB518196BAC42C8895C4E048697 /* Bouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BCF8EC24111B8A4E19B382302E4B33 /* Bouncer.swift */; };
+		4DB92E4DDDCF993340D208782D1B3982 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7BCF9421636851D652B0F9A6864B4FAC /* Doorman-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1607F0123A891E85B6347DD8CF00BE6 /* Doorman-dummy.m */; };
 		9871EFE4C38F05A0FC7523371FED1EFB /* Pods-Doorman_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B6B69D647513E33BF420C7B931809C /* Pods-Doorman_Example-dummy.m */; };
 		AC6689D9CA90DFFCF8603117E74B3166 /* Pods-Doorman_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ED0BA9794065B12BAF9BA4BEB334CC7C /* Pods-Doorman_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC94C7503CA895BE15401E0ED5D43B15 /* Doorman-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51E269E97926C1709973DC604D627BBC /* Doorman-dummy.m */; };
-		C76CDB471C971CAEC85C1D5193302F83 /* Doorman-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87B257BA193AF4D69E978D548FF89994 /* Doorman-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2F61AB1720A4C451AD4448AB770826B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C76CDB471C971CAEC85C1D5193302F83 /* Doorman-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F356D2E01D5B39C3EE171D59BFDFA612 /* Doorman-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF86B148F1DE44EC3E0D17FD8F39F83B /* Pods-Doorman_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45216E0544C08916592CAB012C2C5A0B /* Pods-Doorman_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A58E5AC543A34B3379076502CAB78F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ABFF03CBEC318ED0FE405F6E0A748CD /* Pods-Doorman_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Doorman_Tests-dummy.m"; sourceTree = "<group>"; };
 		15283E2FBE290A5AB89A3984F322FCCE /* Pods-Doorman_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Doorman_Example.release.xcconfig"; sourceTree = "<group>"; };
 		177BBE289869C48E9967DAF73ABA2682 /* Pods-Doorman_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Doorman_Tests.modulemap"; sourceTree = "<group>"; };
@@ -37,31 +38,30 @@
 		2AAFE45B21F71883EE4310B9A82B42DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36B1CB8484035C017938CCED8C645A5F /* Pods-Doorman_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Doorman_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		3881B1E195BA907E8CF41B62A62A1BB8 /* Pods-Doorman_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Doorman_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3E4610901E637A100037692B /* Bouncer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bouncer.swift; sourceTree = "<group>"; };
 		45216E0544C08916592CAB012C2C5A0B /* Pods-Doorman_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Doorman_Example-umbrella.h"; sourceTree = "<group>"; };
 		4CE059AD7C829A08E5ED3E8758081DE7 /* Pods-Doorman_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Doorman_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		51E269E97926C1709973DC604D627BBC /* Doorman-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Doorman-dummy.m"; sourceTree = "<group>"; };
-		5CB7DE2C1C6EDDA3550E0E8C1CE590C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55FD5DE04567A36AD2FC8889C7D1E481 /* Doorman.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Doorman.xcconfig; sourceTree = "<group>"; };
+		58BCF8EC24111B8A4E19B382302E4B33 /* Bouncer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bouncer.swift; path = Doorman/Classes/Bouncer.swift; sourceTree = "<group>"; };
 		5EAA327109CFFA53BFBCBAD6A31F0020 /* Pods_Doorman_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doorman_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68830EA3D2CE7BD9295EA86DDA0E2D70 /* Doorman-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Doorman-prefix.pch"; sourceTree = "<group>"; };
 		7052E761A05BA03F83C5E772AFE1F486 /* Doorman.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Doorman.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		776B57B9D4D6BFC52F10697DF75D9E05 /* Pods_Doorman_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doorman_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		87B257BA193AF4D69E978D548FF89994 /* Doorman-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Doorman-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99B6B69D647513E33BF420C7B931809C /* Pods-Doorman_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Doorman_Example-dummy.m"; sourceTree = "<group>"; };
 		A265AC1553473771ED7F3BB335E33374 /* Pods-Doorman_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Doorman_Example-resources.sh"; sourceTree = "<group>"; };
 		A5BABAC1AC50505D03948356785E53E0 /* Pods-Doorman_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Doorman_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B113B830EB690E8339B8C693F3870532 /* Pods-Doorman_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Doorman_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		C2C555F12F57C9C6F8DF3508F3BF5123 /* Pods-Doorman_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Doorman_Example-frameworks.sh"; sourceTree = "<group>"; };
-		CA94ECB37D5B7323DDB6E2004CCF3B1F /* Doorman.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Doorman.modulemap; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CDDD89FF4BA265C5CC36BB17FCEC80AB /* Pods-Doorman_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Doorman_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D1607F0123A891E85B6347DD8CF00BE6 /* Doorman-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Doorman-dummy.m"; sourceTree = "<group>"; };
 		D485271C03272266EF9363FE728792EB /* Pods-Doorman_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Doorman_Tests-resources.sh"; sourceTree = "<group>"; };
 		DA637C24B2F77668A104BE9BE89AC26B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAE368531DA0F25ADDE97C7D182B0D24 /* Pods-Doorman_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Doorman_Example.modulemap"; sourceTree = "<group>"; };
+		E7464AB33183A8F0CB1C5A48D995477E /* Doorman.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Doorman.modulemap; sourceTree = "<group>"; };
 		EBAAEDE992AAAA58D1B2CE1B395ADCB2 /* Pods-Doorman_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Doorman_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ED0BA9794065B12BAF9BA4BEB334CC7C /* Pods-Doorman_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Doorman_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F3C5C003ED7162A8AAE2030FD1068F1D /* Doorman-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Doorman-prefix.pch"; sourceTree = "<group>"; };
-		FF60413F2C18078AEECD9106F78A5F35 /* Doorman.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Doorman.xcconfig; sourceTree = "<group>"; };
+		F356D2E01D5B39C3EE171D59BFDFA612 /* Doorman-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Doorman-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89A0FE3C76857CEC3DB0542B00A11FFC /* Foundation.framework in Frameworks */,
+				28A85A3C9D7019CDD79C4E3F2FAF50DB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11C720D6AA5ED93749DA7883B27FE6A7 /* Foundation.framework in Frameworks */,
+				4DB92E4DDDCF993340D208782D1B3982 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C98F93F7C9EE75472A5DFB35460AEC7 /* Foundation.framework in Frameworks */,
+				C2F61AB1720A4C451AD4448AB770826B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,17 +95,9 @@
 		167FB7529BD8D9981E3D590CF1E42B89 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B300B50B1BC6C55731A0955347A0D446 /* Doorman */,
+				B4A5CA419064D97BFB32DE33B1350033 /* Doorman */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		3103C3785C7C7A4A49C4F1D17B503BCF /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3E4610901E637A100037692B /* Bouncer.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		61DCE2C4EBC707E19DF8CA9EE4D18961 /* Pods-Doorman_Example */ = {
@@ -144,12 +136,18 @@
 			path = "Target Support Files/Pods-Doorman_Tests";
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+		7D2C9EC9CE1749941D7450D0D33CF0EA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+				E7464AB33183A8F0CB1C5A48D995477E /* Doorman.modulemap */,
+				55FD5DE04567A36AD2FC8889C7D1E481 /* Doorman.xcconfig */,
+				D1607F0123A891E85B6347DD8CF00BE6 /* Doorman-dummy.m */,
+				68830EA3D2CE7BD9295EA86DDA0E2D70 /* Doorman-prefix.pch */,
+				F356D2E01D5B39C3EE171D59BFDFA612 /* Doorman-umbrella.h */,
+				0A58E5AC543A34B3379076502CAB78F6 /* Info.plist */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Doorman";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -161,20 +159,6 @@
 				911DCBE31F320883AD3748CCDA676603 /* Products */,
 				AA75ADA99BE9F4095F96EF6704A368B6 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		848B94487EBFA92FA2695D950C4BB1C1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CA94ECB37D5B7323DDB6E2004CCF3B1F /* Doorman.modulemap */,
-				FF60413F2C18078AEECD9106F78A5F35 /* Doorman.xcconfig */,
-				51E269E97926C1709973DC604D627BBC /* Doorman-dummy.m */,
-				F3C5C003ED7162A8AAE2030FD1068F1D /* Doorman-prefix.pch */,
-				87B257BA193AF4D69E978D548FF89994 /* Doorman-umbrella.h */,
-				5CB7DE2C1C6EDDA3550E0E8C1CE590C5 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Doorman";
 			sourceTree = "<group>";
 		};
 		911DCBE31F320883AD3748CCDA676603 /* Products */ = {
@@ -196,30 +180,30 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B300B50B1BC6C55731A0955347A0D446 /* Doorman */ = {
+		B4A5CA419064D97BFB32DE33B1350033 /* Doorman */ = {
 			isa = PBXGroup;
 			children = (
-				B5584DC9830248BF86E5CF29F75598EE /* Doorman */,
-				848B94487EBFA92FA2695D950C4BB1C1 /* Support Files */,
+				58BCF8EC24111B8A4E19B382302E4B33 /* Bouncer.swift */,
+				7D2C9EC9CE1749941D7450D0D33CF0EA /* Support Files */,
 			);
 			name = Doorman;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		B5584DC9830248BF86E5CF29F75598EE /* Doorman */ = {
-			isa = PBXGroup;
-			children = (
-				3103C3785C7C7A4A49C4F1D17B503BCF /* Classes */,
-			);
-			path = Doorman;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B490F74E441A20B136E94B91051BDA54 /* Build configuration list for PBXNativeTarget "Doorman" */;
 			buildPhases = (
-				A9EC749705EC045631320C4DC917235B /* Sources */,
+				8F8E41DF862DD4327F6221061DC196E9 /* Sources */,
 				4EC6477264320173AD07D56D48D1BAB2 /* Frameworks */,
 				4C44DF8CBCEED4E7B05005067747CF74 /* Headers */,
 			);
@@ -310,11 +294,14 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 				TargetAttributes = {
+					4222F95E18910BAC770A726E757ECCA3 = {
+						LastSwiftMigration = 0900;
+					};
 					DFC97062C0314BEF6C37E188484A591E = {
-						LastSwiftMigration = 0820;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -338,20 +325,20 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8F8E41DF862DD4327F6221061DC196E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D905AB518196BAC42C8895C4E048697 /* Bouncer.swift in Sources */,
+				7BCF9421636851D652B0F9A6864B4FAC /* Doorman-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		90928AA137DD4304617EFA5EF772E271 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				119DD8EE7680B6C78C1543EC1A24ED1E /* Pods-Doorman_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A9EC749705EC045631320C4DC917235B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E4610911E637A100037692B /* Bouncer.swift in Sources */,
-				AC94C7503CA895BE15401E0ED5D43B15 /* Doorman-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,10 +362,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		14154D0524F142572B7071ED48671FC0 /* Debug */ = {
+		1DC6398538DF79B80BFB4AFC7248D806 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4CE059AD7C829A08E5ED3E8758081DE7 /* Pods-Doorman_Tests.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -392,7 +380,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Doorman_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Doorman_Tests/Pods-Doorman_Tests.modulemap";
@@ -410,15 +398,52 @@
 			};
 			name = Debug;
 		};
-		15EFB6974FB928D13F73039A46D5339B /* Release */ = {
+		30029565EE3805553BA4066ED4CF24A2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15283E2FBE290A5AB89A3984F322FCCE /* Pods-Doorman_Example.release.xcconfig */;
+			baseConfigurationReference = 55FD5DE04567A36AD2FC8889C7D1E481 /* Doorman.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Doorman/Doorman-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Doorman/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Doorman/Doorman.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Doorman;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B4ED11AB37E2D5DA548ADB5C0DD586B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5BABAC1AC50505D03948356785E53E0 /* Pods-Doorman_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -427,11 +452,11 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Doorman_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Doorman_Example/Pods-Doorman_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -439,83 +464,21 @@
 				PRODUCT_NAME = Pods_Doorman_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		65EA971C7B380530BA2B9F7D11E122CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF60413F2C18078AEECD9106F78A5F35 /* Doorman.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Doorman/Doorman-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Doorman/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Doorman/Doorman.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Doorman;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		776B0044DF3DE1590602795E9D8753A7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF60413F2C18078AEECD9106F78A5F35 /* Doorman.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Doorman/Doorman-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Doorman/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Doorman/Doorman.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Doorman;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		7876761D4EA569180F77D7AECF503E3D /* Release */ = {
+		774E382F1671717BB1C063B3B79027A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CDDD89FF4BA265C5CC36BB17FCEC80AB /* Pods-Doorman_Tests.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -529,7 +492,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Doorman_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Doorman_Tests/Pods-Doorman_Tests.modulemap";
@@ -547,51 +510,48 @@
 			};
 			name = Release;
 		};
-		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+		92D596510604A26C0FFD7FBFD3B7E405 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55FD5DE04567A36AD2FC8889C7D1E481 /* Doorman.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Doorman/Doorman-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Doorman/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Doorman/Doorman.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Doorman;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+		9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -599,10 +559,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -623,23 +586,69 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		DB0717CED2266DE2D96B5F1667D69429 /* Debug */ = {
+		C03B8870130C98D1B02B59D003687524 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5BABAC1AC50505D03948356785E53E0 /* Pods-Doorman_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C49376D701F4F1584C30311955CE3B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15283E2FBE290A5AB89A3984F322FCCE /* Pods-Doorman_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -648,11 +657,11 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = "Target Support Files/Pods-Doorman_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Doorman_Example/Pods-Doorman_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -660,12 +669,14 @@
 				PRODUCT_NAME = Pods_Doorman_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -673,8 +684,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
-				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+				9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */,
+				C03B8870130C98D1B02B59D003687524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -682,8 +693,8 @@
 		B490F74E441A20B136E94B91051BDA54 /* Build configuration list for PBXNativeTarget "Doorman" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				776B0044DF3DE1590602795E9D8753A7 /* Debug */,
-				65EA971C7B380530BA2B9F7D11E122CA /* Release */,
+				92D596510604A26C0FFD7FBFD3B7E405 /* Debug */,
+				30029565EE3805553BA4066ED4CF24A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -691,8 +702,8 @@
 		D6CB44543E292A632CA142A0A2C42720 /* Build configuration list for PBXNativeTarget "Pods-Doorman_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				14154D0524F142572B7071ED48671FC0 /* Debug */,
-				7876761D4EA569180F77D7AECF503E3D /* Release */,
+				1DC6398538DF79B80BFB4AFC7248D806 /* Debug */,
+				774E382F1671717BB1C063B3B79027A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -700,8 +711,8 @@
 		FB82527BB0C5C89823AFE6031696E5F3 /* Build configuration list for PBXNativeTarget "Pods-Doorman_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB0717CED2266DE2D96B5F1667D69429 /* Debug */,
-				15EFB6974FB928D13F73039A46D5339B /* Release */,
+				4B4ED11AB37E2D5DA548ADB5C0DD586B /* Debug */,
+				C49376D701F4F1584C30311955CE3B4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

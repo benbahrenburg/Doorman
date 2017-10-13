@@ -1,16 +1,16 @@
 PODS:
-  - Doorman (0.1.0)
+  - Doorman (0.1.1)
 
 DEPENDENCIES:
   - Doorman (from `../`)
 
 EXTERNAL SOURCES:
   Doorman:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  Doorman: 3a87df53774f73f17878c4e47e8caf8f60832c1d
+  Doorman: e115ca800a04521d6181965f90dfaf86ce74e001
 
 PODFILE CHECKSUM: 8075680705ed83f0164a65881d6bca7e2795ff58
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.3.1

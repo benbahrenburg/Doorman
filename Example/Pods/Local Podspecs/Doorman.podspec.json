@@ -1,22 +1,24 @@
 {
   "name": "Doorman",
-  "version": "0.1.0",
-  "summary": "A short description of Doorman.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/ben.bahrenburg@gmail.com/Doorman",
+  "version": "0.1.1",
+  "summary": "Ridiculously simple, sampling and control flow for Swift",
+  "description": "Ridiculously simple, sampling and control flow for Swift.",
+  "homepage": "https://github.com/bencoding/Doorman",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "ben.bahrenburg@gmail.com": "ben.bahrenburg@gmail.com"
+    "Ben Bahrenburg": "bencoding.com"
   },
   "source": {
-    "git": "https://github.com/ben.bahrenburg@gmail.com/Doorman.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/bencoding/Sampify.git",
+    "tag": "0.1.1"
   },
+  "social_media_url": "https://twitter.com/bencoding",
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0",
+    "watchos": "2.0"
   },
   "source_files": "Doorman/Classes/**/*"
 }
