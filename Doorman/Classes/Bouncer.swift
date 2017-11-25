@@ -26,27 +26,22 @@ public class Bouncer {
     }
     
     public func inspect(jobLabel: String, threshold: TimeInterval, closure: @escaping (Bool) -> Void) {
-        guard queue != nil else { return }
-        
-        let should = queue!.sync { () -> Bool in
-            let now = Date()
-            let timeInterval = now.timeIntervalSince(timeCache[jobLabel] ?? .distantPast)
+        guard let q = queue else { return }
+        q.async {[weak self] in
+            let timeInterval = Date().timeIntervalSince(self?.timeCache[jobLabel] ?? .distantPast)
             if timeInterval > threshold {
-                timeCache[jobLabel] = now
-                return true
+                self?.timeCache[jobLabel] = Date()
+                return closure(true)
             }
-            return false
-        }
-        queue!.async {
-            closure(should)
+            return closure(false)
         }
     }
     
     public func debounce(jobLabel: String, threshold: TimeInterval, closure: @escaping () -> Void) {
-        guard queue != nil else { return }
-        inspect(jobLabel: jobLabel, threshold: threshold, closure: {[weak self] (should: Bool) in
+        guard let q = queue else { return }
+        inspect(jobLabel: jobLabel, threshold: threshold, closure: {(should: Bool) in
             if should {
-                self?.queue!.async {
+                q.async {
                     closure()
                 }
             }
@@ -54,8 +49,8 @@ public class Bouncer {
     }
     
     public func reset(byJobLabel: String) {
-        guard queue != nil else { return }
-        queue!.sync {
+        guard let q = queue else { return }
+        q.sync {
             if timeCache[byJobLabel] != nil {
                 _ = timeCache.removeValue(forKey: byJobLabel)
             }
@@ -63,8 +58,8 @@ public class Bouncer {
     }
     
     public func reset() {
-        guard queue != nil else { return }
-        queue!.sync {
+        guard let q = queue else { return }
+        q.sync {
             timeCache.removeAll()
         }
     }
