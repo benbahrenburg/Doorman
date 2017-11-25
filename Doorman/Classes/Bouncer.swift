@@ -25,15 +25,20 @@ public class Bouncer {
         queue = DispatchQueue(label: queueLabel, attributes: [.concurrent])
     }
     
+    public func reached(jobLabel: String, threshold: TimeInterval) -> Bool {
+        let timeInterval = Date().timeIntervalSince(self.timeCache[jobLabel] ?? .distantPast)
+        if timeInterval > threshold {
+            self.timeCache[jobLabel] = Date()
+            return true
+        }
+        return false
+    }
+    
     public func inspect(jobLabel: String, threshold: TimeInterval, closure: @escaping (Bool) -> Void) {
         guard let q = queue else { return }
         q.async {[weak self] in
-            let timeInterval = Date().timeIntervalSince(self?.timeCache[jobLabel] ?? .distantPast)
-            if timeInterval > threshold {
-                self?.timeCache[jobLabel] = Date()
-                return closure(true)
-            }
-            return closure(false)
+            let should = self?.reached(jobLabel: jobLabel, threshold: threshold)  ?? true
+            should ?  closure(true) :  closure(false)
         }
     }
     
