@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Doorman'
-  s.version          = '0.1.1'
+  s.version          = '0.1.4'
   s.summary          = 'Ridiculously simple, sampling and control flow for Swift'
   s.description      = <<-DESC
   Ridiculously simple, sampling and control flow for Swift.
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/bencoding/Sampify.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/bencoding'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.watchos.deployment_target = '2.0'
 
   s.source_files = 'Doorman/Classes/**/*'
