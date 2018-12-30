@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'Doorman'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'Ridiculously simple, sampling and control flow for Swift'
   s.description      = <<-DESC
   Ridiculously simple, sampling and control flow for Swift.
@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
   s.watchos.deployment_target = '2.0'
-
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
   s.source_files = 'Doorman/Classes/**/*'
 end

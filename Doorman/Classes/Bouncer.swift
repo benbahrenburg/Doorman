@@ -26,12 +26,16 @@ public class Bouncer {
     }
     
     public func reached(jobLabel: String, threshold: TimeInterval) -> Bool {
-        let timeInterval = Date().timeIntervalSince(self.timeCache[jobLabel] ?? .distantPast)
-        if timeInterval > threshold {
-            self.timeCache[jobLabel] = Date()
-            return true
+        var reached = false
+        guard let q = queue else { return reached }
+        q.sync {[weak self] in
+            let timeInterval = Date().timeIntervalSince(self?.timeCache[jobLabel] ?? .distantPast)
+            if timeInterval > threshold {
+                self?.timeCache[jobLabel] = Date()
+                reached = true
+            }
         }
-        return false
+        return reached
     }
     
     public func inspect(jobLabel: String, threshold: TimeInterval, closure: @escaping (Bool) -> Void) {
