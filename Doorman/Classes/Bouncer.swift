@@ -3,7 +3,7 @@
 //
 //
 //  Created by Ben Bahrenburg on 10/23/16.
-//  Copyright © 2016 bencoding.com. All rights reserved.
+//  Copyright © 2018 bencoding.com. All rights reserved.
 //
 
 import Foundation
@@ -25,21 +25,45 @@ public class Bouncer {
         queue = DispatchQueue(label: queueLabel, attributes: [.concurrent])
     }
     
-    public func reached(jobLabel: String, threshold: TimeInterval) -> Bool {
-        var reached = false
-        let timeInterval = Date().timeIntervalSince(self.timeCache[jobLabel] ?? .distantPast)
-        if timeInterval > threshold {
-            self.timeCache[jobLabel] = Date()
-            reached = true
+    public func exists(jobLabel: String) -> Bool {
+        var exists: Bool = false
+        guard let q = queue else { return exists }
+        q.async {[weak self] in
+            exists = self?.timeCache[jobLabel] != nil ? true : false
         }
+        return exists
+    }
+    
+    public func add(jobLabel: String, threshold: TimeInterval) {
+        guard let q = queue else { return }
+        q.async(flags: .barrier) {[weak self] in
+            self?.timeCache[jobLabel] = Date()
+        }
+    }
+    
+    public func thresholdReached(jobLabel: String, threshold: TimeInterval) -> Bool {
+        var reached = false
+        if !exists(jobLabel: jobLabel) {
+            add(jobLabel: jobLabel, threshold: threshold)
+            return reached
+        }
+        
+        guard let q = queue else { return reached }
+        q.sync {[weak self] in
+            let timeInterval = Date().timeIntervalSince(self?.timeCache[jobLabel] ?? .distantPast)
+            if threshold > timeInterval {
+                reached = true
+            }
+        }
+        
         return reached
     }
     
     public func inspect(jobLabel: String, threshold: TimeInterval, closure: @escaping (Bool) -> Void) {
         guard let q = queue else { return }
         q.async {[weak self] in
-            let should = self?.reached(jobLabel: jobLabel, threshold: threshold)  ?? true
-            should ?  closure(true) :  closure(false)
+            let reached = self?.thresholdReached(jobLabel: jobLabel, threshold: threshold)  ?? true
+            reached ?  closure(false) :  closure(true)
         }
     }
     
@@ -56,17 +80,17 @@ public class Bouncer {
     
     public func reset(byJobLabel: String) {
         guard let q = queue else { return }
-        q.sync {
-            if timeCache[byJobLabel] != nil {
-                _ = timeCache.removeValue(forKey: byJobLabel)
+        q.async(flags: .barrier) {[weak self] in
+            if self?.timeCache[byJobLabel] != nil {
+                self?.timeCache.removeValue(forKey: byJobLabel)
             }
         }
     }
     
     public func reset() {
         guard let q = queue else { return }
-        q.sync {
-            timeCache.removeAll()
+        q.async(flags: .barrier) {[weak self] in
+            self?.timeCache.removeAll()
         }
     }
     
