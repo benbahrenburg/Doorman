@@ -28,7 +28,7 @@ public class Bouncer {
     public func exists(jobLabel: String) -> Bool {
         var exists: Bool = false
         guard let q = queue else { return exists }
-        q.async {[weak self] in
+        q.sync {[weak self] in
             exists = self?.timeCache[jobLabel] != nil ? true : false
         }
         return exists
